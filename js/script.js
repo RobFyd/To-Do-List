@@ -1,13 +1,14 @@
 console.log('Hello World!');
 
 {
-    const tasks = [
+    const tasks = [   //array of objects
+
         {
-            content: "nagrac lekcje",
+            content: "finish homework",
             done: false,
         },
         {
-            content: "zjesc pirogi",
+            content: "have lunch",
             done: true,
         },
     ];
