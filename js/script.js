@@ -25,6 +25,11 @@ console.log('Hello World!');
         render();
     }
 
+    const toggleTaskDone = (taskIndex) => {
+        tasks[taskIndex].done = !tasks[taskIndex].done
+        render();
+    };
+
     const render = () => {
         let htmlString = "";
 
@@ -33,6 +38,7 @@ console.log('Hello World!');
                 <li
                 ${task.done ? " style=\"text-decoration: line-through\"" : ""} 
                 >
+                <button class="js-done">done?</button>
                 <button class="js-remove">delete</button>
                     ${task.content}
                 </li>
@@ -48,10 +54,15 @@ console.log('Hello World!');
                 removeTask(index);
             });
         });
+
+        const toggleDoneButtons = document.querySelectorAll(".js-done");
+
+        toggleDoneButtons.forEach((toggleDoneButton, index) => {
+            toggleDoneButton.addEventListener("click", () => {
+                toggleTaskDone(index);
+            });
+        });
     };
-
-
-
 
     const onFormSubmit = (event) => {
         event.preventDefault();
