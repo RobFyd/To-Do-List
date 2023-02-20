@@ -6,6 +6,10 @@ html {
     box-sizing: inherit;
 }
 
-body {
+.body {
     font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
 }

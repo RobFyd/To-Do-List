@@ -10,21 +10,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Fredoka+One&family=Lato:wght@400;700&family=Pacifico&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body class="body">
-    <form class="js-form">
-        <input class="js-newTask">
-        <button>Add a task</button>
+    <form class="form js-form">
+        <h2 class="form__header">Task list</h2>
+            <div>
+                <h4 class="task__header">Add a new task</h4>
+                    <input class="task__field js-newTask">
+                    <button class="task__button">Add a task</button>
+            </div>
     </form>
-
-    <ul class="js-tasks"></ul>
-
+    <div>
+        <h4 class="task__header">Your tasks</h4>
+        <ul class="js-tasks"></ul>
+    </div>
 </body>
 
 </html>
