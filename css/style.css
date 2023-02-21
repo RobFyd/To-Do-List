@@ -8,10 +8,10 @@ html {
 
 .body {
     font-family: 'Montserrat', sans-serif;
-    background-color: whitesmoke;
-    max-width: auto;
+    background-color: lightpink;
+    border: 1px solid black;
     margin: 20px;
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
