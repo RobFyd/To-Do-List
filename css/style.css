@@ -9,7 +9,9 @@ html {
 .body {
     font-family: 'Montserrat', sans-serif;
     background-color: whitesmoke;
-    max-width: 800px;
-    margin: auto;
-    padding: 15px;
+    max-width: auto;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
 }
+
