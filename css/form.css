@@ -1,12 +1,13 @@
 .container {
    width: 800px;
    display: grid;
-   grid-template-rows: 0fr 1fr 1fr;
+   grid-template-rows: 0fr 120px 2fr;
 }
 
-.container > * {
-   border: 1px solid black; /* obramowanie dla każdego elementu */
- }
+.container>* {
+   border: 1px solid black;
+   /* obramowanie dla każdego elementu */
+}
 
 .header {
    margin-bottom: 5px;
@@ -16,12 +17,31 @@
    margin-bottom: 5px;
    padding: 10px;
    display: grid;
+   grid-template-rows: 3fr 1fr 1fr;
 }
 
-.task__header {
+.form__header {
    margin-top: 5px;
+}
+
+.form__item {
+   display: flex;
+   justify-content: space-between;
+}
+
+.task__field {}
+
+.task__button {
+   background-color: teal;
+   color: white;
 }
 
 .form__tasks {
    padding: 10px;
+   display: grid;
+   grid-template-rows: (2, 1fr);
+}
+
+.new__task {
+   margin-top: 5px;
 }
