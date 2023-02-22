@@ -9,9 +9,9 @@ html {
 .body {
     font-family: 'Montserrat', sans-serif;
     background-color: lightpink;
-    border: 1px solid black;
+    display: grid;
+    place-items: center;
     margin: 20px;
     padding: 20px;
-    text-align: center;
 }
 
