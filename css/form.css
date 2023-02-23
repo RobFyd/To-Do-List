@@ -37,6 +37,14 @@
    word-break: break-word;
 }
 
+.task__field:enabled {
+   border-color: lightgrey;
+}
+
+.task__field:read-only {
+   color: lightgrey;
+}
+
 .task__button {
    background-color: teal;
    color: white;
