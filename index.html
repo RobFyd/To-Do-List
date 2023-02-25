@@ -18,20 +18,22 @@
 </head>
 
 <body class="body">
-    <div class="container">
-        <h2 class="header">Task list</h2>
-        <form class="form js-form">
-            <h4 class="form__header">Add a new task</h4>
-            <div class="form__item">
-                <input class="task__field js-newTask" name="readonly" value="Add a new task here!">
-                <button class="task__button">Add a task</button>
+    <main class="container">
+        <div class="container__items">
+            <h2 class="header">Task list</h2>
+            <form class="form js-form">
+                <h4 class="form__header">Add a new task</h4>
+                <div class="form__item">
+                    <input class="task__field js-newTask" placeholder="Add a new task hire!">
+                    <button class="task__button">Add a task</button>
+                </div>
+            </form>
+            <div class="form__tasks">
+                <h4 class="form__header">Your tasks</h4>
+                <ul class="tasks js-tasks"></ul>
             </div>
-        </form>
-        <div class="form__tasks">
-            <h4 class="form__header">Your tasks</h4>
-            <ul class="new__task js-tasks"></ul>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

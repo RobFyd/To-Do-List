@@ -1,5 +1,7 @@
 .container {
-   width: 800px;
+   max-width: 900px;
+   padding: 20px;
+   margin: 0 auto;
    display: grid;
    grid-template-rows: 0fr 120px 2fr;
 }
@@ -63,6 +65,15 @@
    grid-template-rows: (2, 1fr);
 }
 
-.new__task {
+.tasks {
    margin-top: 5px;
+}
+
+/*.tasks__item {
+   display: grid;
+   grid-template-columns: auto 1fr auto;
+   grid-gap: 10px;
+   align-items: center;
+   padding: 10px;
+   border-bottom: 1px solid #ddd;
 }
