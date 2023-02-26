@@ -2,14 +2,11 @@
    max-width: 900px;
    padding: 20px;
    margin: 0 auto;
-   display: grid;
-   grid-template-rows: 0fr 120px 2fr;
 }
 
 /*.container>* {
    border: 1px solid black;
-   /* obramowanie dla każdego elementu
-} */
+}*/
 
 .header {
    margin-bottom: 5px;
@@ -18,8 +15,7 @@
 .form {
    margin-bottom: 5px;
    padding: 15px;
-   display: grid;
-   grid-template-rows: 3fr 1fr 1fr;
+   box-shadow: 0 0 10px 1px lightgray;
 }
 
 .form__header {
@@ -63,6 +59,7 @@
    padding: 15px;
    display: grid;
    grid-template-rows: (2, 1fr);
+   box-shadow: 0 0 10px 1px lightgray;
 }
 
 .tasks {
