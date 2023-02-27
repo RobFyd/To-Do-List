@@ -85,11 +85,13 @@ grid-gap: 20px;*/
 }
 
 .tasks {
+   list-style: none;
    padding: 15px;
    margin: 0;
 }
 
-/*.tasks__item {
+.tasks__item {
+   border: 1px solid black;
    display: grid;
    grid-template-columns: auto 1fr auto;
    grid-gap: 10px;
