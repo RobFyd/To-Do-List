@@ -55,11 +55,11 @@ console.log('Hello World!');
 
         for (const task of tasks) {
             htmlString += `
-                <li
+                <li class="tasks__item"
                 ${task.done ? " style=\"text-decoration: line-through\"" : ""} 
                 >
                 <button class="js-done">done?</button>
-                <button class="js-remove">delete</button>
+                <button class="tasks__remove js-remove">delete</button>
                     ${task.content}
                 </li>
             `;

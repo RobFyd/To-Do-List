@@ -23,17 +23,6 @@
    padding: 15px;
    display: flex;
    justify-content: space-between;
-   /*display: grid;
-grid-template-columns: 1fr auto;
-grid-gap: 20px;*/
-}
-
-@media (max-width: 500px) {
-   .form__item {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 1;
-   }
 }
 
 .task__field {
@@ -55,8 +44,8 @@ grid-gap: 20px;*/
    background-color: teal;
    color: white;
    border: none;
-   width: 120px;
-   padding: 5px;
+   width: auto;
+   padding: 5px 20px;
 }
 
 .task__button:hover {
@@ -67,16 +56,26 @@ grid-gap: 20px;*/
    background-color: lightseagreen;
 }
 
+.task__button:active {
+   transform: translateY(1px);
+}
+
 @media (max-width: 500px) {
+   .form__item {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 1;
+   }
+
    .task__button {
       margin-top: 15px;
       display: flex;
       justify-content: center;
    }
-}
 
-.task__button:active {
-   transform: translateY(1px);
+   .task__field {
+      margin: 0;
+   }
 }
 
 .form__tasks {
@@ -91,11 +90,13 @@ grid-gap: 20px;*/
 }
 
 .tasks__item {
-   border: 1px solid black;
    display: grid;
-   grid-template-columns: auto 1fr auto;
+   grid-template-columns: auto auto 1fr;
    grid-gap: 10px;
    align-items: center;
    padding: 10px;
-   border-bottom: 1px solid #ddd;
+}
+
+.tasks__remove {
+   grid-column-start: 1;
 }
