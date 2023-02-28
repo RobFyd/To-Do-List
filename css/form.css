@@ -91,12 +91,12 @@
 
 .tasks__item {
    display: grid;
-   grid-template-columns: auto auto 1fr;
+   grid-template-columns: auto 1fr auto;
    grid-gap: 10px;
    align-items: center;
    padding: 10px;
 }
 
-.tasks__remove {
-   grid-column-start: 1;
+/*.tasks__remove {
+   grid-column-end: 1;
 }
