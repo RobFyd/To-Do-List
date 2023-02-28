@@ -48,7 +48,7 @@ console.log('Hello World!');
             });
         });
     };
-    
+
 
     const render = () => {
         let htmlString = "";
@@ -58,10 +58,10 @@ console.log('Hello World!');
                 <li class="tasks__item"
                 ${task.done ? " style=\"text-decoration: line-through\"" : ""} 
                 >
-                <button class="js-done">done?</button>
-                <button class="tasks__remove js-remove">delete</button>
-                    ${task.content}
-                </li>
+                <button class="task__done js-done">Do</button>
+                <p class="task__content">${task.content}</p>
+                <button class="task__remove js-remove">de</button>
+                    </li>
             `;
         }
 
