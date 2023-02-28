@@ -59,7 +59,9 @@ console.log('Hello World!');
                 ${task.done ? " style=\"text-decoration: line-through\"" : ""} 
                 >
                 <button class="task__done js-done">Do</button>
-                <p class="task__content">${task.content}</p>
+
+                <span class="task__content task__content--done">${task.content}</span>
+
                 <button class="task__remove js-remove">de</button>
                     </li>
             `;
