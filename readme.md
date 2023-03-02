@@ -9,7 +9,7 @@ This is my second tool for creating a to-do list. I created it as part of the "F
 
 ### Demo
 
-![In progress]()
+![To Do List](https://github.com/RobFyd/To-Do-List/blob/main/gif/todolist.gif?raw=true)
 
 My first page contains:
 - HTML
