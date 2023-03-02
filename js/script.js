@@ -1,23 +1,10 @@
-console.log('Hello World!');
-
 {
-    const tasks = [   //array of objects
-
-        {
-            content: "finish homework",
-            done: false,
-        },
-        {
-            content: "have lunch",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
         });
-
         render();
     };
 
@@ -55,9 +42,8 @@ console.log('Hello World!');
 
         for (const task of tasks) {
             htmlString += `
-                <li class="tasks__item js-task"
-                ${task.done ? "" : ""} 
-                >
+                <li class="tasks__item js-tasks">
+
                 <button class="task__done task__done--active js-done">${task.done ? "✔" : ""}</button>
 
                 <span class="task__content${task.done ? " task__content--done" : ""}">${task.content}</span>
@@ -88,7 +74,6 @@ console.log('Hello World!');
         render();
 
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit);
     };
 
