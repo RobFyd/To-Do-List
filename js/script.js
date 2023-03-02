@@ -26,7 +26,9 @@
                 removeTask(index);
             });
         });
+    };
 
+    const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -35,7 +37,6 @@
             });
         });
     };
-
 
     const render = () => {
         let htmlString = "";
@@ -56,18 +57,21 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
         bindEvents();
+        bindToggleDoneEvents();
     };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskElement = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskElement.value.trim();
 
-        if (newTaskContent === "") {
-            return;
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTaskElement.value = "";
         }
 
-        addNewTask(newTaskContent);
+        newTaskElement.focus();
     };
 
     const init = () => {
