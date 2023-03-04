@@ -15,20 +15,20 @@
 }
 
 .section__header {
-   padding: 15px;
+   padding: 20px;
    margin: 0;
    font-size: 18px;
    border-bottom: 1px solid lightgray;
 }
 
 .form {
-   padding: 15px;
+   padding: 20px;
    display: flex;
 }
 
 .form__field {
    margin-right: 20px;
-   padding: 5px;
+   padding: 8px 5px;
    border: 1px solid lightgray;
    flex-grow: 1;
 }
@@ -46,7 +46,7 @@
    color: white;
    border: none;
    width: auto;
-   padding: 5px 20px;
+   padding: 8px 20px;
 }
 
 .form__button:hover {
