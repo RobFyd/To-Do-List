@@ -1,15 +1,9 @@
-.form__tasks {
-    margin: 10px 0;
-    box-shadow: 0 0 5px 1px gainsboro;
-    background-color: white;
- }
- 
  .tasks {
     list-style: none;
     padding: 15px;
     margin: 0;
  }
- 
+
  .tasks__item {
     padding: 10px;
     display: grid;
@@ -18,7 +12,7 @@
     align-items: center;
     border-bottom: 1px solid lightgray;
  }
- 
+
  .task__done {
     background-color: darkgreen;
     border: none;
@@ -27,24 +21,24 @@
     height: 30px;
     padding: 0;
  }
- 
+
  .task__done:hover {
     background-color: green;
  }
- 
+
  .task__done:active {
     border: 2px solid black;
     border-radius: 3px;
  }
- 
+
  .task__content--done {
     text-decoration: line-through;
  }
- 
+
  .task__content {
     margin: 0;
  }
- 
+
  .task__remove {
     background-color: crimson;
     border: none;
@@ -53,11 +47,11 @@
     height: 30px;
     padding: 0;
  }
- 
+
  .task__remove:hover {
     background-color: red;
  }
- 
+
  .task__remove:active {
     border: 2px solid black;
     border-radius: 3px;
