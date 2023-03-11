@@ -14,11 +14,37 @@
    background-color: white;
 }
 
-.section__header {
+.section__container {
    padding: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid lightgray;
+}
+
+.section__header {
    margin: 0;
+   padding: 20px;
    font-size: 18px;
    border-bottom: 1px solid lightgray;
+}
+
+.section__header2 {
+   margin: 0;
+   margin-right: auto;
+   font-size: 18px;
+}
+
+.button__hide {
+color: teal;
+border: none;
+margin-right: 15px;
+}
+
+.button__complete {
+   color: teal;
+   border: none;
 }
 
 .form {
