@@ -1,10 +1,13 @@
 {
-    const tasks = [];
+    let tasks = [];
+    let hideDoneTasks = false;    //przycisk do ukrycia wszystkich zadan ukonczonych
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
+
         render();
     };
 
@@ -14,6 +17,7 @@
     }
 
     const toggleTaskDone = (taskIndex) => {
+        //tasks = tasks.map
         tasks[taskIndex].done = !tasks[taskIndex].done
         render();
     };
@@ -38,8 +42,10 @@
         });
     };
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
+
+//li class = tasks__item--hidden
 
         for (const task of tasks) {
             htmlString += `
@@ -53,9 +59,17 @@
                     </li>
             `;
         }
-
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
 
+    const renderButtons = () => { };
+
+    const bindButtonsEvents = () => { }; // event listener for buttons, dac if bo przyciski raz sa a raz nie
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
+        bindButtonsEvents();
         bindEvents();
         bindToggleDoneEvents();
     };
