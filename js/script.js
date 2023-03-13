@@ -1,6 +1,6 @@
 {
     let tasks = [];
-    let hideDoneTasks = false;    //przycisk do ukrycia wszystkich zadan ukonczonych
+    let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
         tasks = [
@@ -21,8 +21,16 @@
     }
 
     const toggleTaskDone = (taskIndex) => {
-        //tasks = tasks.map
-        tasks[taskIndex].done = !tasks[taskIndex].done
+        tasks = tasks.map((task, index) => index === taskIndex ? { ...task, done: !task.done } : task);
+        render();
+    };
+
+    const toggleAllTasksDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+
         render();
     };
 
@@ -46,6 +54,18 @@
         });
     };
 
+    const renderButtons = () => {
+
+        if (!tasks.length) {
+            document.querySelector(".js-buttons").innerHTML = "";
+            return;
+        }
+
+        document.querySelector(".js-buttons").innerHTML =
+            `<button class="button__hideCompleted js-hideCompleted">${hideDoneTasks ? "Show" : "Hide"} completed</button>
+            <button class="button__completeAll js-completeAll" disabled>Complete all</button>`;
+    };
+
     const renderTasks = () => {
         let htmlString = "";
 
@@ -66,7 +86,6 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
 
-    const renderButtons = () => { };
 
     const bindButtonsEvents = () => { }; // event listener for buttons, dac if bo przyciski raz sa a raz nie
 

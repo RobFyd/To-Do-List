@@ -36,13 +36,13 @@
    font-size: 18px;
 }
 
-.button__hide {
+.button__hideCompleted {
 color: teal;
 border: none;
 margin-right: 15px;
 }
 
-.button__complete {
+.button__completeAll {
    color: teal;
    border: none;
 }
