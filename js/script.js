@@ -12,7 +12,11 @@
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            ...tasks.slice(taskIndex + 1),
+        ];
+
         render();
     }
 
@@ -45,11 +49,11 @@
     const renderTasks = () => {
         let htmlString = "";
 
-//li class = tasks__item--hidden
+        //li class = tasks__item--hidden
 
         for (const task of tasks) {
             htmlString += `
-                <li class="tasks__item js-tasks">
+                <li class="tasks__item">
 
                 <button class="task__done task__done--active js-done">${task.done ? "✔" : ""}</button>
 
