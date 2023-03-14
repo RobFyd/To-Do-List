@@ -5,19 +5,21 @@
 
 ### Description
 
-This is my second tool for creating a to-do list. I created it as part of the "Frontend developer from scratches" course. Below is a demo of the project. The tool is still being improved.
+This is my second tool for creating a to-do-list. I created it as part of the "Frontend developer from scratches" course. Below is a demo of the project. The tool is still being improved.
 
 ### Demo
 
 ![To Do List](https://github.com/RobFyd/To-Do-List/blob/main/gif/todolist.gif?raw=true)
 
-My first page contains:
+My To Do List contains:
+
+- JavaScript
 - HTML
-- CSS
-- JS
 - BEM convention
+- CSS
 - Flex
 - Grid
+- querySelector
 
 My logo:
 
