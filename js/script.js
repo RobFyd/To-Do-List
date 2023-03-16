@@ -109,7 +109,7 @@
 
                 <button class="task__done task__done--active js-done">${task.done ? "✔" : ""}</button>
 
-                <span class="task__content${task.done ? "task__content--done" : ""}">${task.content}</span>
+                <span class="task__content ${task.done ? "task__content--done" : ""}">${task.content}</span>
 
                 <button class="task__remove task__remove--active js-remove">🗑</button>
                     </li>
