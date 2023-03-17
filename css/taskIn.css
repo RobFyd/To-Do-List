@@ -37,14 +37,26 @@
 }
 
 .button__hideCompleted {
-color: teal;
-border: none;
-margin-right: 15px;
+   color: teal;
+   border: none;
+   margin-right: 15px;
+   transition: 0.5s;
+}
+
+.button__hideCompleted:hover {
+   color: lightseagreen;
+   transition: 0.5s;
 }
 
 .button__completeAll {
    color: teal;
    border: none;
+   transition: 0.5s;
+}
+
+.button__completeAll:hover {
+   color: lightseagreen;
+   transition: 0.5s;
 }
 
 .form {
@@ -73,10 +85,13 @@ margin-right: 15px;
    border: none;
    width: auto;
    padding: 8px 20px;
+   transition: 0.1s;
 }
 
 .form__button:hover {
    background-color: darkcyan;
+   transition: 0.2s;
+   transform: scale(105%);
 }
 
 .form__button:active {
