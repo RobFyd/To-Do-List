@@ -17,6 +17,7 @@
     background-color: darkgreen;
     border: none;
     color: white;
+    cursor: pointer;
     width: 30px;
     height: 30px;
     padding: 0;
@@ -50,6 +51,7 @@
     background-color: crimson;
     border: none;
     color: white;
+    cursor: pointer;
     width: 30px;
     height: 30px;
     padding: 0;
