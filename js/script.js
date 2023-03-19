@@ -4,8 +4,7 @@
 
     const addNewTask = (newTaskContent) => {
         tasks = [
-            ...tasks,
-            { content: newTaskContent },
+            ...tasks, { content: newTaskContent },
         ];
 
         render();
@@ -18,10 +17,18 @@
         ];
 
         render();
-    }
+    };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks = tasks.map((task, index) => index === taskIndex ? { ...task, done: !task.done } : task);
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            {
+                ...tasks[taskIndex],
+                done: !tasks[taskIndex].done,
+            },
+            ...tasks.slice(taskIndex + 1),
+        ];
+
         render();
     };
 
@@ -101,8 +108,6 @@
     const renderTasks = () => {
         let htmlString = "";
 
-        //li class = tasks__item--hidden
-
         for (const task of tasks) {
             htmlString += `
                 <li class="tasks__item ${task.done && hiddenDoneTasks ? "tasks__item--hidden" : ""}">
@@ -117,9 +122,6 @@
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
-
-
-    //const bindButtonsEvents = () => { }; // event listener for buttons, dac if bo przyciski raz sa a raz nie
 
     const render = () => {
         renderTasks();
