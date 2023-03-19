@@ -44,7 +44,7 @@
     const toggleHiddenTasksDone = () => {
         hiddenDoneTasks = !hiddenDoneTasks;
         render();
-    }
+    };
 
     const bindRemoveEvents = () => {
         if (!tasks.length) {
@@ -119,7 +119,7 @@
                 <button class="task__remove task__remove--active js-remove">🗑</button>
                     </li>
             `;
-        }
+        };
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
 
@@ -128,7 +128,6 @@
         renderButtons();
         bindButtonsEvents();
         bindRemoveEvents();
-        //bindToggleDoneEvents();
     };
 
     const onFormSubmit = (event) => {
@@ -139,7 +138,7 @@
 
         if (newTaskContent !== "") {
             addNewTask(newTaskContent);
-        }
+        };
 
         newTaskElement.focus();
         newTaskElement.value = "";
