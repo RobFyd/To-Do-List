@@ -19,7 +19,7 @@ My To Do List contains:
 - CSS
 - Flex
 - Grid
-- querySelector
+- querySelector, querySelectorAll
 
 My logo:
 
