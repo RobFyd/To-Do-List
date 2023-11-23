@@ -119,7 +119,7 @@
                   task.done ? "task__content--done" : ""
                 }">${task.content}</span>
 
-                <button class="task__remove task__remove--active js-remove">🗑</button>
+                <button class="task__remove js-remove">🗑</button>
                     </li>
             `;
     }
