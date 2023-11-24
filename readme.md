@@ -33,6 +33,7 @@ If you want to learn more and test the functionality of my tool, click below:
 
 
 ```javascript
-let x = "love coding";
+let x = "Thank you for your time";
 console.log(x);
+// :)
 ```
