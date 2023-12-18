@@ -13,6 +13,8 @@ This is my second tool for creating a to-do-list. I created it as part of the "F
 
 My To Do List contains:
 
+![TechnologiesIcons](https://skillicons.dev/icons?i=html,css,js,github,vscode)
+
 - JavaScript
 - HTML
 - BEM convention
